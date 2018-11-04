@@ -5,8 +5,8 @@ import {signUp} from '../../store/actions/authActions';
 
 export class SignUp extends Component {
   state = {
-    firstname: '',
-    lastname: '',
+    firstName: '',
+    lastName: '',
     email: '',
     password: ''
   }
@@ -30,12 +30,12 @@ export class SignUp extends Component {
         <form onSubmit={this.handleSubmit} className="white z-depth-1">
            <h5 className="grey-text text-darken-3">Sign Up</h5>
            <div className="input-field">
-            <label htmlFor="firstname">First Name</label>
-            <input type="text" id="firstname" onChange={this.handleChange}/>
+            <label htmlFor="firstName">First Name</label>
+            <input type="text" id="firstName" onChange={this.handleChange}/>
            </div>
            <div className="input-field">
-            <label htmlFor="lastname">Last Name</label>
-            <input type="text" id="lastname" onChange={this.handleChange}/>
+            <label htmlFor="lastName">Last Name</label>
+            <input type="text" id="lastName" onChange={this.handleChange}/>
            </div>
            <div className="input-field">
             <label htmlFor="email">Email</label>
